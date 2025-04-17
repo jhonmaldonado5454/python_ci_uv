@@ -1,0 +1,12 @@
+pre-commit
+flake8
+pep8-naming
+pycodestyle
+pylint
+isort
+black
+bandit
+safety
+mypy
+pydocstyle
+wily
