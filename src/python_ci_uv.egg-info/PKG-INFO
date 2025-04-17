@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: python_ci_uv
+Version: 0.1.0
+Summary: Code quality and signal visualization with Streamlit
+Author-email: Jhon Maldonado <jhonmaldonado54@gmail.com>
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: matplotlib==3.10.1
+Requires-Dist: numpy==2.2.4
+Requires-Dist: scipy==1.15.2
+Requires-Dist: streamlit==1.44.1
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pep8-naming; extra == "dev"
+Requires-Dist: pycodestyle; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bandit; extra == "dev"
+Requires-Dist: safety; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pydocstyle; extra == "dev"
+Requires-Dist: wily; extra == "dev"
+Dynamic: license-file

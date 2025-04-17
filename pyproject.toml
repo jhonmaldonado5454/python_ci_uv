@@ -1,0 +1,33 @@
+[project]
+name = "python_ci_uv"
+version = "0.1.0"
+description = "Code quality and signal visualization with Streamlit"
+authors = [{ name = "Jhon Maldonado", email = "jhonmaldonado54@gmail.com" }]
+requires-python = ">=3.12"
+
+dependencies = [
+    "matplotlib==3.10.1",
+    "numpy==2.2.4",
+    "scipy==1.15.2",
+    "streamlit==1.44.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "flake8",
+    "pep8-naming",
+    "pycodestyle",
+    "pylint",
+    "isort",
+    "black",
+    "bandit",
+    "safety",
+    "mypy",
+    "pydocstyle",
+    "wily"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

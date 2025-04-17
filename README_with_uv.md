@@ -22,3 +22,34 @@ A control quality to deliver clean code for small python projects with [pre-comm
 
 ## References:
 - [Simplify your Python Code: Automating Code Complexity Analysis with Wily](https://towardsdatascience.com/simplify-your-python-code-automating-code-complexity-analysis-with-wily-5c1e90c9a485/)
+
+## Using `uv` for Dependency Management
+
+[`uv`](https://github.com/astral-sh/uv) is a fast Python package manager compatible with `pyproject.toml`.
+
+### 1. Install `uv`
+```bash
+curl -Ls https://astral.sh/uv/install.sh | sh
+```
+
+### 2. Create a virtual environment
+```bash
+uv venv
+```
+
+### 3. Install dependencies from `pyproject.toml`
+- Install main dependencies:
+```bash
+uv pip install .
+```
+- Install with development tools:
+```bash
+uv pip install .[dev]
+```
+
+> If you encounter file lock errors, make sure to run this inside a native WSL terminal, not via Windows PowerShell or mapped network paths.
+
+### 4. Run the app
+```bash
+streamlit run app.py
+```
