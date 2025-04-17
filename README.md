@@ -38,33 +38,6 @@ streamlit run src/app.py
 
 ---
 
-## ✅ Pre-commit Setup
-
-This project uses `pre-commit` to ensure code quality automatically on every commit.
-
-1. **Install pre-commit hooks**
-```bash
-pre-commit install
-```
-
-2. **Run checks on all files (optional)**
-```bash
-pre-commit run --all-files
-```
-
----
-
-## 🔁 Committing Changes
-
-When committing code, if any formatting or linting issues are detected, the commit will be blocked until they are fixed. To proceed:
-
-```bash
-git add .
-git commit -m "fix: corrected linting issues"
-```
-
----
-
 ## 🧪 Running this Project on GitHub Codespaces with `uv`
 
 This project is fully compatible with GitHub Codespaces.
@@ -105,7 +78,6 @@ streamlit run src/app.py
 
 ## 📚 References
 
-- [pre-commit](https://pre-commit.com/)
 - [uv](https://github.com/astral-sh/uv)
 - [streamlit](https://streamlit.io/)
 - [wily (complexity tool)](https://towardsdatascience.com/simplify-your-python-code-automating-code-complexity-analysis-with-wily-5c1e90c9a485/)
